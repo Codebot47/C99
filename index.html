@@ -1,0 +1,58 @@
+
+<html>
+
+    <head>
+        <title>Collage Web App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
+    
+    </head>
+    
+    <body style="background-image: radial-gradient(white, pink, magenta, rgb(196, 0, 196)); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-style: oblique; font-weight: bold;">
+    <center>
+        <h1>Collage Web App</h1>
+        <hr>
+        <h4 style="color: rgb(4, 14, 160);">You will see a pop-up appear on your screen. Please immediatly press allow after you see the pop-up. It will come after you initiate a command.</h4>
+        <h1>Instructions:</h1>
+        <h3>1. Press start.
+            2. Get into a selfie pose.
+            3. Say, "Selfie," when you finally want to take the selfie. 
+            4. You can then make a collage out of all of your selfies.
+        </h3>
+        <button id="button" class="btn btn-primary" onclick="save()">Start</button>
+        <h4>Press the Start Button to start</h4>
+        <br>
+        <label>The Following Section will be your collage:</label>
+        <br>
+        <br>
+        <div id="camera" style="width: 500px; height: auto; border-width: 10px; border-style: dashed; border-color: rgb(4, 253, 253); display: inline-block;">
+            <br>
+            <br>
+            <label>All selfies you take will be displayed under this:</label>
+            <br>
+            <br>
+            <br>
+            <div id="resultShow">
+                <div id="selfie1" style="box-shadow: 10px 10px 10px rgb(78, 77, 70); width: fit-content;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdIWmT9dn0bX8Gg5IP2N61dUIDTX3syCwKHw&usqp=CAU">
+                </div>
+                <br>
+                <div id="selfie2" style="box-shadow: 10px 10px 10px rgb(78, 77, 70); width: fit-content;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU8bvtWaPAmzSD0ujYKJVufEj_vjL7-dvCJQ&usqp=CAU">
+                </div>
+                <br>
+                <div id="selfie3" style="box-shadow: 10px 10px 10px rgb(78, 77, 70); width: fit-content;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7jSY9jpys2LVhYJL34xhZuC-xE_HmI3kSLg&usqp=CAU">
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div id="Creator"></div>
+    </center>
+    </body>
+    <script src="main.js"></script>
+    </html>
